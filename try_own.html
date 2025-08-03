@@ -10,11 +10,10 @@
     <button onclick="AddTodo()">add bro</button>
 </body>
 <script>
-       function deleteTodo(){
-    let element = document.getElementById(index)
-    let deletion = element.parentNode.removeChild
+       delBtn.onclick = function() {
+  this.parentNode.remove(); // 'this' = button, so parentNode = <li>
+};
 
-    }
     function AddTodo(){
        let addEl = document.querySelector("input")
         const value = addEl.value;
@@ -24,4 +23,5 @@
     }
  
 </script>
+
 </html>
